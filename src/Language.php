@@ -1,19 +1,18 @@
 <?php
 /**
- * mithra62 - Language Handler
+ * Jaeger
  *
- * @author		Eric Lamb <eric@mithra62.com>
- * @copyright	Copyright (c) 2015, mithra62, Eric Lamb.
- * @link		http://mithra62.com/
+ * @copyright	Copyright (c) 2015-2016, mithra62
+ * @link		http://jaeger-app.com
  * @version		1.0
- * @filesource 	./mithra62/Language.php
+ * @filesource 	./Language.php
  */
-namespace mithra62;
+namespace JaegerApp;
 
-use \mithra62\Traits\Log;
+use JaegerApp\Traits\Log;
 
 /**
- * mithra62 - Language Handler Object
+ * Jaeger - Language Handler Object
  *
  * Provides basic and generic string replacement via loaded php arrays ONLY.
  *
