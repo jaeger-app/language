@@ -1,26 +1,26 @@
 <?php
 /**
- * mithra62 - Unit Test
+ * Jaeger
  *
- * @copyright	Copyright (c) 2015, mithra62, Eric Lamb.
- * @link		http://mithra62.com/
+ * @author		Eric Lamb <eric@mithra62.com>
+ * @copyright	Copyright (c) 2015-2016, mithra62, Eric Lamb
+ * @link		http://jaeger-app.com
  * @version		1.0
- * @filesource 	./mithra62/tests/LanguageTest.php
+ * @filesource 	./tests/LanguageTest.php
  */
-namespace mithra62\tests;
+namespace JaegerApp\tests;
 
-use mithra62\tests\TestFixture;
-use mithra62\Language;
+use JaegerApp\Language;
 
 /**
- * mithra62 - Language object Unit Tests
+ * Jaeger - Language object Unit Tests
  *
- * Contains all the unit tests for the \mithra62\Language object
+ * Contains all the unit tests for the \JaegerApp\Language object
  *
- * @package mithra62\Tests
+ * @package Jaeger\Tests
  * @author Eric Lamb <eric@mithra62.com>
  */
-class LanguageTest extends TestFixture
+class LanguageTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -28,9 +28,9 @@ class LanguageTest extends TestFixture
      */
     public function testLanguageInit()
     {
-        $this->assertClassHasAttribute('is_loaded', '\\mithra62\\Language');
-        $this->assertClassHasAttribute('paths', '\\mithra62\\Language');
-        $this->assertClassHasAttribute('language', '\\mithra62\\Language');
+        $this->assertClassHasAttribute('is_loaded', '\\JaegerApp\\Language');
+        $this->assertClassHasAttribute('paths', '\\JaegerApp\\Language');
+        $this->assertClassHasAttribute('language', '\\JaegerApp\\Language');
         
         $lang = new Language();
         $this->assertObjectHasAttribute('is_loaded', $lang);
