@@ -1,6 +1,6 @@
 {
 	"name": "jaeger-app/language",
-	"description": "A simple language abastrcaction to simply keep copy out of your code.",
+	"description": "A simple language abstraction to simply keep copy out of your code. This is NOT a translation library.",
 	"require": {
 		"php": ">=5.4.0",
 		"jaeger-app/exceptions": "dev-master",
