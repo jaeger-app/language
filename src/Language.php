@@ -105,7 +105,7 @@ class Language
      */
     public function __($line = '')
     {
-        $line = ($line == '' or ! isset($this->language[$line])) ? FALSE : $this->language[$line];
+        $line = ($line == '' or ! isset($this->language[$line])) ? $line : $this->language[$line];
         return $line;
     }
 }

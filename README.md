@@ -23,6 +23,8 @@ To get started with `JaegerApp\Language` you pass system paths to directories co
 $lang = new Language;
 $lang_path = '/path/to/language/files';
 $lang->init($lang_path);
+
+echo $lang->__('backup_success_message');
 ```
 
 You can also pass an array of paths to the constructor to bulk load language files
@@ -35,3 +37,17 @@ $paths = array(
 );
 $lang = new Language($paths);
 ```
+
+## Language File Format
+
+The language files are a simple key => value array called `$lang`
+
+```php
+$lang = array(
+	'backup_success_message' => 'Backup Complete!',
+	'backup_fail_message' => 'Backup Failed...',
+);
+```
+
+You can store multiple language files in the same directory as well as add multiple directories so keeping content organized shouldn't hurt too much. 
+
