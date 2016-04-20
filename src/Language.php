@@ -33,13 +33,6 @@ class Language
     private $is_loaded = array();
 
     /**
-     * The file system paths to look for language files at
-     * 
-     * @var array
-     */
-    public $paths = array();
-
-    /**
      * Container for the various languages
      * 
      * @var unknown
@@ -59,7 +52,9 @@ class Language
             );
         }
         
-        $this->paths = $paths;
+        foreach($paths As $path) {
+            $this->init($path);
+        };
     }
 
     /**
