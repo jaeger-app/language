@@ -28,12 +28,10 @@ class LanguageTest extends \PHPUnit_Framework_TestCase
     public function testLanguageInit()
     {
         $this->assertClassHasAttribute('is_loaded', '\\JaegerApp\\Language');
-        $this->assertClassHasAttribute('paths', '\\JaegerApp\\Language');
         $this->assertClassHasAttribute('language', '\\JaegerApp\\Language');
         
         $lang = new Language();
         $this->assertObjectHasAttribute('is_loaded', $lang);
-        $this->assertObjectHasAttribute('paths', $lang);
         $this->assertObjectHasAttribute('language', $lang);
         
         $lang->init($this->lang1Path());
