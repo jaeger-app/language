@@ -79,7 +79,7 @@ class Language
                     '..'
                 ))) {
                     $file = $path . '/' . $entry;
-                    include ($file);
+                    $lang = include ($file);
                     
                     $this->is_loaded[] = $file;
                     

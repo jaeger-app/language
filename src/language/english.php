@@ -15,7 +15,7 @@
  * 
  * @var array
  */
-$lang = array(
+return array(
     'php' => 'PHP',
     'mysqldump' => 'MySQLDUMP',
     'mysql' => 'MySQL',

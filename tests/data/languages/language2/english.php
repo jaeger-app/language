@@ -1,5 +1,5 @@
 <?php
-$lang = array(
+return array(
     'test_language_return' => 'testLanguage2String',
     'm62' => 'mithra62'
 );
